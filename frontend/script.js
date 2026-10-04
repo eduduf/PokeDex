@@ -37,7 +37,7 @@ const fecthPokemons = async () => {
 }
 
 const getPokemons = async (id) => {
-    const url = `https://pokeapi.co/api/v2/pokemon/${id}`;
+    const url = `https://pokedex-5oi9.onrender.com/api/pokemon/${id}`;
     const res = await fetch(url)
     const data = await res.json()
     createPokemonCard(data)
