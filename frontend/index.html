@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PodeDex</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="pageHeader">
+        <h1>Pokédex</h1>
+        <form class="searchForm" id="searchForm" role="search">
+            <label class="visuallyHidden" for="searchInput">Pesquisar Pokémon por nome ou número</label>
+            <input id="searchInput" type="search" placeholder="Nome ou número" autocomplete="off">
+            <button type="submit">Buscar</button>
+        </form>
+        <div class="filterBar">
+            <label class="filterControl" for="typeFilter">
+                <span>Tipo</span>
+                <select id="typeFilter">
+                    <option value="">Todos os tipos</option>
+                    <option value="normal">Normal</option>
+                    <option value="fire">Fogo</option>
+                    <option value="water">Água</option>
+                    <option value="electric">Elétrico</option>
+                    <option value="grass">Planta</option>
+                    <option value="ice">Gelo</option>
+                    <option value="fighting">Lutador</option>
+                    <option value="poison">Veneno</option>
+                    <option value="ground">Terrestre</option>
+                    <option value="flying">Voador</option>
+                    <option value="psychic">Psíquico</option>
+                    <option value="bug">Inseto</option>
+                    <option value="rock">Pedra</option>
+                    <option value="ghost">Fantasma</option>
+                    <option value="dragon">Dragão</option>
+                    <option value="dark">Sombrio</option>
+                    <option value="steel">Aço</option>
+                    <option value="fairy">Fada</option>
+                </select>
+            </label>
+            <label class="filterControl" for="sortFilter">
+                <span>Ordenar por</span>
+                <select id="sortFilter">
+                    <option value="id">Número</option>
+                    <option value="name">Nome</option>
+                </select>
+            </label>
+        </div>
+    </header>
+    <div class="pokeContainer" id="pokeContainer">
+       
+    </div>
+    <p class="emptyState" id="emptyState" hidden>Nenhum Pokémon encontrado.</p>
+    <script src="script.js"></script>
+</body>
+</html>
